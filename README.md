@@ -61,18 +61,15 @@ Case fit image not added yet.
 
 ## BOM
 
-| Item | Qty | Part Number / Link | Notes |
-| --- | --- | --- | --- |
-| Seeed XIAO RP2040 (Through-hole, unsoldered) | 1 | Seeed XIAO RP2040 | Main MCU |
-| 1N4148 Diodes (through-hole) | 20 | 1N4148 | Through-hole diodes |
-| MX-Style switches | 16 | MX-compatible | Main key switches |
-| EC11 Rotary encoders | 2 | EC11 | Rotary input |
-| 0.91 inch OLED display | 1 | 0.91" I2C OLED | Pin order must be `GND-VCC-SCL-SDA` |
-| White blank DSA keycaps | 16 | DSA blank keycaps | For 16-key layout |
-| SK6812 MINI-E LEDs | 16 | SK6812 MINI-E | Per-key lighting |
-| M3x16mm screws | 4 | M3x16mm | Case assembly |
-| M3x5mx4mm heatset inserts | 4 | M3x5mx4mm | Case inserts |
-
+| Item | Qty | Notes |
+| --- | --- | --- |
+| Seeed XIAO RP2040 (Through-hole, unsoldered) | 1 | Main MCU |
+| 1N4148 Diodes (through-hole) | 9 | Through-hole diodes |
+| MX-Style switches | 9 | Main key switches |
+| EC11 Rotary encoders | 1 | Rotary input |
+| 0.91 inch OLED display | 1 | Pin order must be `GND-VCC-SCL-SDA` |
+| White blank DSA keycaps | 9 | For 16-key layout |
+| SK6812 MINI-E LEDs | 9 | Per-key lighting |
 ## Ship Post Template
 
 Post this in `#blueprint-drafts` on Slack:
