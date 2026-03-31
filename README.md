@@ -5,15 +5,15 @@ Blueprint hackpad project repository.
 ## Project Overview
 
 - Hackpad name: SoumilHackpad
-- Creator: soumilvyas1
-- Description: Add your short project description here.
+- Creator: soumil
+- Description: My macropad has 9 keys, a small OLED, and a rotary encoder. I can use it for macros, volume control, or just for fun. :)
 
 ## Repository Structure
 
-- `CAD/` - Full assembled hackpad model (`.STEP`, `.STP`, or `.3MF`)
-- `PCB/` - PCB source design files (for KiCad: `.kicad_pro`, `.kicad_sch`, `.kicad_pcb`)
-- `Firmware/` - Firmware source files (`QMK`, `KMK`, `ZMK`, etc.)
-- `production/` - Manufacturing-ready outputs (gerbers, case exports, firmware build)
+- `CAD/` - Full assembled hackpad model )
+- `PCB/` - PCB source design files 
+- `Firmware/` - Firmware source files 
+- `production/` - Manufacturing-ready outputs 
 
 ## Required Design Constraints
 
@@ -25,23 +25,9 @@ Blueprint hackpad project repository.
 - 2-layer PCB only
 - 3D printed case parts only (no acrylic/laser-cut parts)
 
-## Submission Checklist
 
-### Source Files
 
-- [ ] `CAD/assembly.step` (or `.stp` / `.3mf`) with PCB and all case parts
-- [ ] `PCB/` source files are complete
-- [ ] `Firmware/` source files are complete
-
-### Production Files
-
-- [ ] `production/gerbers.zip`
-- [ ] `production/Top.step` (or `.stl`)
-- [ ] `production/Bottom.step` (or `.stl`)
-- [ ] `production/Middle.step` (or `.stl`) if used
-- [ ] `production/firmware.uf2` (QMK) or `production/main.py` (KMK)
-
-## Screenshots (Required)
+## Screenshots 
 
 ### 1. Overall Hackpad
 
@@ -55,9 +41,6 @@ Blueprint hackpad project repository.
 
 ![PCB](Images/pcbpicture.png)
 
-### 4. Case Fit / Assembly
-
-Case fit image not added yet.
 
 ## BOM
 
@@ -70,19 +53,4 @@ Case fit image not added yet.
 | 0.91 inch OLED display | 1 | Pin order must be `GND-VCC-SCL-SDA` |
 | White blank DSA keycaps | 9 | For 16-key layout |
 | SK6812 MINI-E LEDs | 9 | Per-key lighting |
-## Ship Post Template
 
-Post this in `#blueprint-drafts` on Slack:
-
-```text
-Hackpad name: SoumilHackpad
-GitHub Repo: https://github.com/soumil210/SoumilHackpad
-Description: <short description of your project>
-```
-
-Attach images of your hackpad with the post.
-
-## Final Submission
-
-1. Submit design review from the Blueprint dashboard.
-2. Keep this repo up to date with any review feedback.
