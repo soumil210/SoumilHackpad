@@ -43,23 +43,21 @@ Blueprint hackpad project repository.
 
 ## Screenshots (Required)
 
-Add images to a folder like `images/` and reference them below.
-
 ### 1. Overall Hackpad
 
-![Overall Hackpad](images/hackpad-overall.png)
+![Overall Hackpad](Images/Cadpicture.png)
 
 ### 2. Schematic
 
-![Schematic](images/schematic.png)
+![Schematic](Images/schematicpicture.png)
 
 ### 3. PCB
 
-![PCB](images/pcb.png)
+![PCB](Images/pcbpicture.png)
 
 ### 4. Case Fit / Assembly
 
-![Case Assembly](images/case-assembly.png)
+Case fit image not added yet.
 
 ## BOM
 
