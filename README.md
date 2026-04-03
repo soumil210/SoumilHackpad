@@ -23,7 +23,7 @@ Blueprint hackpad project repository.
 - Fewer than 16 inputs total
 - Approved parts only
 - 2-layer PCB only
-- 3D printed case parts only (no acrylic/laser-cut parts)
+- 3D printed case parts only
 
 
 
