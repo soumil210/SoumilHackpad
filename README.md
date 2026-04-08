@@ -10,22 +10,10 @@ Blueprint hackpad project repository.
 
 ## Repository Structure
 
-- `CAD/` - Full assembled hackpad model )
+- `CAD/` - Full assembled hackpad model :)
 - `PCB/` - PCB source design files 
 - `Firmware/` - Firmware source files 
 - `production/` - Manufacturing-ready outputs 
-
-## Required Design Constraints
-
-- Through-hole Seeed XIAO RP2040 as main MCU
-- PCB size <= `100mm x 100mm`
-- Case size <= `200mm x 200mm x 100mm`
-- Fewer than 16 inputs total
-- Approved parts only
-- 2-layer PCB only
-- 3D printed case parts only
-
-
 
 ## Screenshots 
 
