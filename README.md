@@ -1,6 +1,6 @@
 ﻿# SoumilHackpad
 
-Blueprint hackpad project repository.
+project repository.
 
 ## Project Overview
 
