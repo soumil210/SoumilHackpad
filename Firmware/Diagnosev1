@@ -1,0 +1,38 @@
+import board
+import digitalio
+import time
+
+# Columns: driven LOW one at a time (outputs)
+col_pins = [board.D3, board.D7, board.D8]
+cols = []
+for pin in col_pins:
+    c = digitalio.DigitalInOut(pin)
+    c.direction = digitalio.Direction.OUTPUT
+    c.value = True  # idle HIGH
+    cols.append(c)
+
+# Rows: inputs with pull-up (COL2ROW -> row reads LOW when pressed)
+row_pins = [board.D0, board.D1, board.D2]
+rows = []
+for pin in row_pins:
+    r = digitalio.DigitalInOut(pin)
+    r.direction = digitalio.Direction.INPUT
+    r.pull = digitalio.Pull.UP
+    rows.append(r)
+
+print("Manual matrix scan started. Press keys one at a time.")
+print("Format: Row0 Row1 Row2  (per column)")
+
+while True:
+    for ci, c in enumerate(cols):
+        # set this column LOW, others HIGH
+        for other in cols:
+            other.value = True
+        c.value = False
+        time.sleep(0.001)  # let it settle
+
+        states = [r.value for r in rows]  # True = not pressed, False = pressed
+        if not all(states):
+            print("Col", ci, "->", ["PRESSED" if not s else "-" for s in states])
+
+    time.sleep(0.05)
