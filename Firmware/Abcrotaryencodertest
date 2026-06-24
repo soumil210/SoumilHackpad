@@ -1,0 +1,35 @@
+import board
+import digitalio
+import time
+ 
+# Encoder pins from schematic: A=D10, B=D9
+pin_a = digitalio.DigitalInOut(board.D10)
+pin_a.direction = digitalio.Direction.INPUT
+pin_a.pull = digitalio.Pull.UP
+ 
+pin_b = digitalio.DigitalInOut(board.D9)
+pin_b.direction = digitalio.Direction.INPUT
+pin_b.pull = digitalio.Pull.UP
+ 
+print("Encoder test started. Turn the knob...")
+print("A=D10, B=D9")
+ 
+last_a = pin_a.value
+last_b = pin_b.value
+ 
+while True:
+    a = pin_a.value
+    b = pin_b.value
+ 
+    if a != last_a or b != last_b:
+        direction = "?"
+        if last_a and not a:       # A fell
+            direction = "CW" if b else "CCW"
+        elif last_b and not b:     # B fell
+            direction = "CCW" if a else "CW"
+ 
+        print("A={} B={} -> {}".format(a, b, direction))
+        last_a = a
+        last_b = b
+ 
+    time.sleep(0.001)
